@@ -1,0 +1,67 @@
+.video__container {
+  position: relative;
+  width: 100%;
+}
+
+.video__container .video__source {
+  width: 100%;
+  display: none;
+  border-bottom: 3px solid #E2D8CE;
+
+  -webkit-animation: fadeIn 6s;
+  animation: fadeIn 6s;
+}
+
+.video__container .video__source--open {
+  display: block;
+}
+
+.video__source--open + span .video__poster {
+  display: none;
+}
+
+.video__container .video__poster {
+  -webkit-animation: fadeIn 6s;
+  animation: fadeIn 6s;
+}
+
+.video__container .video__caption {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 60px;
+
+  display: flex;
+  align-items: center;
+  z-index: 300;
+}
+
+.video__caption .hero__cta-video {
+  font-size: 28px;
+  font-weight: bold;
+  font-family: 'Akzindenz', sans-serif;
+
+  color: #fff;
+  border: none;
+  background: transparent;
+}
+
+@-webkit-keyframes fadeIn {
+  from { opacity: 0; }
+    to { opacity: 1; }
+}  
+@keyframes fadeIn {
+  from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@-webkit-keyframes fadeOut {
+  from { opacity: 1; }
+    to { opacity: 0; }
+}  
+@keyframes fadeOut {
+  from { opacity: 1; }
+    to { opacity: 0; }
+}
+

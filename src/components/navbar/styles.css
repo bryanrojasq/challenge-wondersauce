@@ -1,0 +1,145 @@
+.nav__container {
+    top: 0;
+    width: 100%;
+    z-index: 900;
+    position: fixed;
+    transition: top 0.6s;
+}
+
+.nav__container .nav__list {    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 60px;
+    
+    border: none;
+    background: #EAE9E7;
+    transition: background 0.6s, color 0.6s;
+}
+
+.nav__container .nav__list li {
+    flex: 1;
+
+    border: none;
+    color: #222;
+    list-style: none;
+}
+
+/* alignment */
+.nav__container .nav__list li:nth-of-type(1) {
+    text-align: left;
+}
+.nav__container .nav__list li:nth-of-type(2) {
+    text-align: center;
+}
+.nav__container .nav__list li:nth-of-type(3) {
+    text-align: right;
+}
+
+.nav__container-pull-right {
+    display: flex;
+}
+
+.nav__list a {
+    color: #222;
+    text-decoration: none;
+}
+
+.nav__list button {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Akzindenz', sans-serif;
+    
+    border: none;
+    color: #222;
+    background: transparent;
+}
+
+/* state */
+.nav__container--hidden {
+    top: -92px;
+}
+
+.nav__container .nav__mobile {
+    display: none;
+    flex-direction: column;
+    /* display: none; */    
+    -webkit-transition: 0.6s;
+    -moz-transition: 0.6s;
+    -o-transition: 0.6s;
+    transition: 0.6s;
+    opacity: 0;
+    visibility: hidden; 
+
+    -webkit-box-shadow: 0px 1px 15px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 1px 15px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 1px 15px 0px rgba(0,0,0,0.75);
+
+}
+
+.nav__container .nav__mobile--open {
+    display: flex;
+    flex-direction: column;
+    
+    opacity: 1;
+    visibility: visible;
+}
+.nav__container .nav__mobile li {
+    margin-right: 0;
+    padding: 20px 10px;
+    background: #EAE9E7;
+}
+.nav__container .nav__mobile li,
+.nav__container .nav__mobile li a {
+    color: #222;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* state */
+.nav__container--transparent .nav__list {
+    background: transparent;
+}
+.nav__container--transparent .nav__list li,
+.nav__container--transparent .nav__list a,
+.nav__container--transparent .nav__list button {
+    color: #fff;
+}
+
+.nav__container--transparent .nav__mobile li {
+    border-top: 1px solid #fff;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+.nav__container--transparent .nav__mobile li:last-child {
+    border-bottom: 1px solid #fff;
+}
+.nav__container--transparent .nav__mobile li,
+.nav__container--transparent .nav__mobile li a {
+    color: #fff;
+}
+
+/* helpers */
+.show-sm {
+    display: none;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+@media all and (max-width: 767px) {
+    .nav__container .nav__list {
+        padding: 15px 20px 15px;
+    }
+    .nav__container .nav__mobile {
+        display: flex;
+    }
+    /* helpers */
+    .show-sm {
+        display: block;
+    }
+    .hide-sm {
+        display: none;
+    }
+}
