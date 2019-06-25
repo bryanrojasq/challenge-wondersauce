@@ -8,7 +8,7 @@ export default class Navbar extends React.Component {
         super(props);
         this.state = {
             isToggleOn: false,
-            prevScrollPos: window.pageYOffset,
+            prevScrollPos: 0,
             visible: true,
             transparent: true
         };
