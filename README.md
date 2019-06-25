@@ -3,6 +3,37 @@
 
 # Wondersauce Challenge
 
+## Quick start
+
+1. **Start developing.**
+
+```sh
+
+npm install -g gatsby-cli.
+
+git clone https://github.com/brojask/challenge-wondersauce.git
+
+cd challenge-wondersauce
+
+gatsby develop
+
+```
+
+2. **Your site is now running at!**
+
+`http://localhost:8000`
+
+## Documentation
+
+1. **Components' Diagram.** > [View File](https://github.com/brojask/challenge-wondersauce/find/master)
+
+2. **Documentation**
+	- [https://reactjs.org/docs/getting-started.html](https://reactjs.org/docs/getting-started.html)
+	- [https://github.com/akiran/react-slick](https://github.com/akiran/react-slick)
+	- [https://css-tricks.com/snippets/css/a-guide-to-flexbox/](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+	- [https://www.gatsbyjs.org/tutorial/part-zero/](https://www.gatsbyjs.org/tutorial/part-zero/)
+	- [https://www.codevoila.com/post/56/migrating-reactjs-components-from-es5-to-es6 (https://www.codevoila.com/post/56/migrating-reactjs-components-from-es5-to-es6)
+
 ## Test Rules
 
 The purpose of this exercise is get an understanding of your approach to some common frontend development tasks that will be encountered throughout your career. While there is no right or wrong way to complete the designs, we’re looking for an understanding of best frontend practices in your approach. The goal is to have a functional and accurate representation of the designs provided. Details on modules are outlined below.
@@ -71,22 +102,4 @@ Upon completion please give a brief outline of the reasoning behind your decisio
 
   
 
-## Quick start
 
-1. **Start developing.**
-
-```sh
-
-npm install -g gatsby-cli.
-
-git clone https://github.com/brojask/challenge-wondersauce.git
-
-cd challenge-wondersauce
-
-gatsby develop
-
-```
-
-2. **Your site is now running at!**
-
-`http://localhost:8000`
