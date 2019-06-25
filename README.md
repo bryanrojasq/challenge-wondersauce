@@ -25,7 +25,7 @@ gatsby develop
 
 ## Documentation
 
-1. **Components' Diagram.** > [View File](https://github.com/brojask/challenge-wondersauce/find/master)
+1. **Components' Diagram.** > [View File](https://github.com/brojask/challenge-wondersauce/blob/master/Components%20Challenge%20Page-finale.pdf)
 
 2. **Documentation**
 	- [https://reactjs.org/docs/getting-started.html](https://reactjs.org/docs/getting-started.html)
