@@ -1,7 +1,6 @@
 import React from "react"
 import Hero from "../hero/index"
 import Navbar from "../navbar/index"
-import "./styles.css"
 
 export default class Header extends React.Component {
 
