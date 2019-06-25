@@ -9,7 +9,7 @@
 
 ```sh
 
-npm install -g gatsby-cli.
+npm install -g gatsby-cli
 
 git clone https://github.com/brojask/challenge-wondersauce.git
 
