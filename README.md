@@ -1,97 +1,92 @@
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
-<p align="center">
-  <a href="https://www.gatsbyjs.org">
-    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby's hello-world starter
-</h1>
 
-Kick off your project with this hello-world boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
+  
 
-_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.org/docs/gatsby-starters/)._
+# Wondersauce Challenge
 
-## 🚀 Quick start
+## Test Rules
 
-1.  **Create a Gatsby site.**
+The purpose of this exercise is get an understanding of your approach to some common frontend development tasks that will be encountered throughout your career. While there is no right or wrong way to complete the designs, we’re looking for an understanding of best frontend practices in your approach. The goal is to have a functional and accurate representation of the designs provided. Details on modules are outlined below.
 
-    Use the Gatsby CLI to create a new site, specifying the hello-world starter.
+  
 
-    ```sh
-    # create a new Gatsby site using the hello-world starter
-    gatsby new my-hello-world-starter https://github.com/gatsbyjs/gatsby-starter-hello-world
-    ```
+## General
 
-1.  **Start developing.**
+- Build can be done using React if preferred. Feel free to use create-react-app to kickstart the process if you decide to move forward with React. A static build is welcome!
 
-    Navigate into your new site’s directory and start it up.
+- Must be built to align with a 12 column grid system.
 
-    ```sh
-    cd my-hello-world-starter/
-    gatsby develop
-    ```
+- Timing on transitions should be kept to a 0.6s time.
 
-1.  **Open the source code and start editing!**
+  
 
-    Your site is now running at `http://localhost:8000`!
+## Navigation
 
-    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
+- Must be sticky.
 
-    Open the `my-hello-world-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
+- Upon scroll apply a #e2d8ce colored background to the Navigation with a .8 opacity.
 
-## 🧐 What's inside?
+- Navigation should move up and off screen while scrolling down past the Hero element, reappear on scroll up.
 
-A quick look at the top-level files and directories you'll see in a Gatsby project.
+- Please have links drive user to a new page. This can feature the same content provided with updated Lorem Ipsum copy.
 
-    .
-    ├── node_modules
-    ├── src
-    ├── .gitignore
-    ├── .prettierrc
-    ├── gatsby-browser.js
-    ├── gatsby-config.js
-    ├── gatsby-node.js
-    ├── gatsby-ssr.js
-    ├── LICENSE
-    ├── package-lock.json
-    ├── package.json
-    └── README.md
+  
 
-1.  **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
+## Hero
 
-2.  **`/src`**: This directory will contain all of the code related to what you will see on the front-end of your site (what you see in the browser) such as your site header or a page template. `src` is a convention for “source code”.
+- Fullwidth background image that changes between desktop and mobile breakpoints. (767px should start the mobile break)
 
-3.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
+- Radio button selection changes the images that are applied to the background of the hero.
 
-4.  **`.prettierrc`**: This is a configuration file for [Prettier](https://prettier.io/). Prettier is a tool to help keep the formatting of your code consistent.
+- Add to bag CTA must increase the bag number count in the navigation.
 
-5.  **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.org/docs/browser-apis/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
+- Down arrow acts as a jump link to the next section of the page. Please apply easing on the scroll.
 
-6.  **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you’d like to include, etc. (Check out the [config docs](https://www.gatsbyjs.org/docs/gatsby-config/) for more detail).
+  
 
-7.  **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby Node APIs](https://www.gatsbyjs.org/docs/node-apis/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
+## Content Section
 
-8.  **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.org/docs/ssr-apis/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
+- All images should have intrinsic lazy loading. Container should be `#eaeaea` background color before image asset is loaded in.
 
-9.  **`LICENSE`**: Gatsby is licensed under the MIT license.
+- Image carousel should be built to expect variable height with images.
 
-10. **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
+- Image carousel should operable on swipe / drag and slide number click.
 
-11. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
+- Right aligned image should stay static.
 
-12. **`README.md`**: A text file containing useful reference information about your project.
+  
 
-## 🎓 Learning Gatsby
+## Video Player (This is a nice to have, feel free to bypass this section during the build)
 
-Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.org/). Here are some places to start:
+- Any video or solution can be used here.
 
-- **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.org/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
+- Video player to fit fullscreen. Fullscreen proportions must be kept on window resize.
 
-- **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.org/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
+- On play video image still to fade out. Fades back in on pause.
 
-## 💫 Deploy
+- Scrolling video offscreen should pause video and reapply still image.
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-hello-world)
+  
 
-<!-- AUTO-GENERATED-CONTENT:END -->
+Upon completion please give a brief outline of the reasoning behind your decisions made during the build. The goal here is just to see what your process is and you’d approach designs given to you.
+
+  
+
+## Quick start
+
+1. **Start developing.**
+
+```sh
+
+npm install -g gatsby-cli.
+
+git clone https://github.com/brojask/challenge-wondersauce.git
+
+cd challenge-wondersauce
+
+gatsby develop
+
+```
+
+2. **Your site is now running at!**
+
+`http://localhost:8000`
